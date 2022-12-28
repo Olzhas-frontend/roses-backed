@@ -1,0 +1,32 @@
+.modal-review {
+	width: 400px;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 3rem;
+
+		font-weight: 600;
+		font-size: 2rem;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	&__form {
+	}
+}
+
+.reviews-modal {
+	width: 1170px;
+	padding: 4rem 5rem 2rem;
+
+	.modal-review__title {
+		font-size: 3rem;
+		text-align: left;
+	}
+
+	.reviews__slider-item {
+		margin-bottom: 1.5rem;
+
+		border: 1px solid #e2e4eb;
+	}
+}

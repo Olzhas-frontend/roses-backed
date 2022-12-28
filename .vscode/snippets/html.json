@@ -1,0 +1,109 @@
+{
+	"svguse multi": {
+		"scope": "html",
+		"prefix": "y-multi",
+		"body": [
+			"<svg class=\"\">",
+			"  <use xlink:href=\"images/sprites/sprite-multi.svg#$2\"></use>",
+			"</svg>"
+		],
+		"description": "Snippet for use svg sprites"
+	},
+	"svguse mono": {
+		"scope": "html",
+		"prefix": "y-mono",
+		"body": [
+			"<svg class=\"\">",
+			"  <use xlink:href=\"images/sprites/sprite-mono.svg#$2\"></use>",
+			"</svg>"
+		],
+		"description": "Snippet for use svg sprites"
+	},
+	"burger": {
+		"scope": "html",
+		"prefix": "y-burger",
+		"body": [
+			"<button class=\"burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\"  data-burger>",
+			"  <span class=\"burger__line\"></span>",
+			"</button>"
+		],
+		"description": "Snippet for burger btn"
+	},
+	"checkbox": {
+		"scope": "html",
+		"prefix": "y-checkbox",
+		"body": [
+			"<label class=\"custom-checkbox\">",
+			"  <input type=\"checkbox\" class=\"custom-checkbox__field\">",
+			"  <span class=\"custom-checkbox__content\">$1</span>",
+			"</label>"
+		],
+		"description": "Snippet for custom checkbox"
+	},
+	"navigation": {
+		"scope": "html",
+		"prefix": "y-nav",
+		"body": [
+			"<nav class=\"nav\" title=\"$1\">",
+			"  <ul class=\"nav__list\">",
+			"    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+			"    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+			"    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+			"  </ul>",
+			"</nav>"
+		],
+		"description": "Snippet for navigation"
+	},
+	"social": {
+		"scope": "html",
+		"prefix": "y-social",
+		"body": [
+			"<ul class=\"social\" title=\"$1\">",
+			"  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--fb\" aria-label=\"Наша страничка в Фейсбуке\"></a></li>",
+			"  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--vk\" aria-label=\"Наша страничка во Вконтакте\"></a></li>",
+			"  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--tw\" aria-label=\"Наша страничка в Твиттере\"></a></li>",
+			"</ul>"
+		],
+		"description": "Snippet for social links"
+	},
+	"basicform": {
+		"prefix": "y-form",
+		"body": [
+			"<form action=\"#\" class=\"form\">",
+			"  <label class=\"form__label\">",
+			"    <input type=\"text\" name=\"Имя\" class=\"input-reset form__input\" placeholder=\"Имя\">",
+			"  </label>",
+			"  <button class=\"btn-reset form__btn\">Отправить</button>",
+			"</form>"
+		],
+		"description": "Snippet for basic form"
+	},
+	"basicswiper": {
+		"prefix": "y-swiper",
+		"body": [
+			"<div class=\"swiper $1\">",
+			"  <div class=\"swiper-wrapper\">",
+			"     <div class=\"swiper-slide\">",
+			"     </div>",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Snippet for basic swiper structure"
+	},
+	"picture": {
+		"prefix": "y-picture",
+		"body": [
+			"<picture>",
+			"  <source srcset=\"images/$1.webp\" type=\"image/webp\">",
+			"  <img loading=\"lazy\" src=\"images/$2.$3\" class=\"image\" alt=\"$4\">",
+			"</picture>"
+		],
+		"description": "Snippet for basic logo structure"
+	},
+	"svgimg": {
+		"scope": "html",
+		"prefix": "y-svgimg",
+		"body": ["<img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">"],
+		"description": "Snippet for simple html svg images"
+	}
+}

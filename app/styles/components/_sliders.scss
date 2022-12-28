@@ -1,0 +1,28 @@
+.sliders {
+	&__wrapper {
+		position: relative;
+
+		.swiper-button-prev {
+			left: -20px;
+
+			display: none;
+
+			&.active {
+				display: flex;
+			}
+		}
+
+		.swiper-button-next {
+			right: -20px;
+		}
+	}
+
+	&__slider {
+		width: 100%;
+		overflow: hidden;
+
+		.swiper-slide {
+			height: auto;
+		}
+	}
+}

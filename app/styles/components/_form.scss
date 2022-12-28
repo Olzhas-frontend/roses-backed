@@ -1,0 +1,147 @@
+.form {
+	&__header {
+		margin-bottom: 3rem;
+
+		text-align: center;
+	}
+
+	&__title {
+		margin: 0;
+
+		font-weight: 600;
+		font-size: 2rem;
+		line-height: 30px;
+	}
+
+	&__group {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 0.5rem;
+
+		color: var(--bright-grey);
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__control {
+		display: block;
+		width: 100%;
+		padding: 1.2rem 2rem;
+
+		color: var(--primary-color);
+		line-height: 22px;
+
+		background: var(--color-white);
+		border: 1px solid #d0d2d7;
+		border-radius: 5px;
+
+		&::placeholder {
+			color: var(--steel-gray);
+			line-height: 22px;
+		}
+	}
+
+	&__textarea {
+		height: 95px;
+
+		resize: none;
+	}
+
+	&__descr {
+		margin-top: 1rem;
+
+		color: var(--davy-gray);
+		font-size: 1.2rem;
+		line-height: 16px;
+	}
+
+	&__link {
+		color: var(--color-blue);
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 1.3rem 0;
+
+		color: var(--color-white);
+		font-weight: 500;
+		line-height: 22px;
+
+		background-color: var(--color-blue);
+		border: 1px solid transparent;
+		border-radius: 5px;
+
+		transition: 0.3s ease-in-out;
+
+		@include hover {
+			color: var(--color-blue);
+
+			background-color: var(--color-white);
+			border-color: var(--color-blue);
+		}
+	}
+
+	&__caption {
+		display: inline-block;
+		margin-bottom: 1rem;
+
+		color: var(--bright-grey);
+		font-weight: 500;
+	}
+
+	&__rating {
+		$this: &;
+
+		display: flex;
+		align-items: center;
+
+		@include hover {
+			#{$this}-icon {
+				fill: #ffa500;
+			}
+		}
+
+		&-list {
+			display: flex;
+			align-items: center;
+		}
+
+		&-item {
+			cursor: pointer;
+
+			@include hover {
+				~ #{$this}-item #{$this}-icon {
+					fill: #d0d2d7;
+				}
+			}
+		}
+
+		&-icon {
+			width: 24px;
+			height: 24px;
+			margin-right: 0.5rem;
+
+			fill: #d0d2d7;
+
+			@include hover {
+				fill: #ffa500;
+			}
+		}
+
+		&-count {
+			margin-left: 0.5rem;
+
+			color: var(--bright-grey);
+			font-weight: 500;
+			font-size: 1.4rem;
+
+			transition: 0.2s ease-in;
+		}
+	}
+}

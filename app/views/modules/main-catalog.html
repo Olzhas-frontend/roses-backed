@@ -1,0 +1,453 @@
+<section class="catalog">
+	<div class="container">
+		<div class="catalog__wrapper">
+			<div class="catalog-filters">
+				<div class="flowers-roses">
+					<h3 class="flowers-roses__title">Букеты из роз</h3>
+					<ul class="flowers-roses__list list-reset">
+						<li class="flowers-roses__item">
+							<a class="flowers-roses__link" href="#">Местные розы</a>
+						</li>
+						<li class="flowers-roses__item">
+							<a class="flowers-roses__link" href="#">Эквадорские розы</a>
+						</li>
+						<li class="flowers-roses__item">
+							<a class="flowers-roses__link" href="#">Кенийские розы</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-filters__wrapper">
+					<div class="catalog-filter">
+						<div class="catalog-filter__header filters-price">
+							<h3 class="catalog-filter__caption">Цена</h3>
+							<div class="filters-price__inputs">
+								<label class="filters-price__label">
+									<input type="number" min="500" max="50000" placeholder="500" class="filters-price__input"
+										id="input-0">
+								</label>
+								<label class="filters-price__label">
+									<input type="number" min="500" max="50000" placeholder="50000" class="filters-price__input"
+										id="input-1">
+								</label>
+							</div>
+							<div class="filters-price__slider" id="range-slider"></div>
+						</div>
+					</div>
+					<div class="catalog-filter">
+						<div class="catalog-filter__header">
+							<h3 class="catalog-filter__caption">Цвета</h3>
+						</div>
+						<ul class="catalog-filter__colors filter-colors list-reset">
+							<li class="filter-colors__item filter-colors__item--persian"></li>
+							<li class="filter-colors__item filter-colors__item--red"></li>
+							<li class="filter-colors__item filter-colors__item--pastel-pink"></li>
+							<li class="filter-colors__item filter-colors__item--pink"></li>
+							<li class="filter-colors__item filter-colors__item--orange"></li>
+							<li class="filter-colors__item filter-colors__item--orange-light"></li>
+							<li class="filter-colors__item filter-colors__item--orange-lightest"></li>
+							<li class="filter-colors__item filter-colors__item--white"></li>
+							<li class="filter-colors__item filter-colors__item--blue"></li>
+							<li class="filter-colors__item filter-colors__item--light-blue"></li>
+							<li class="filter-colors__item filter-colors__item--eastern-blue"></li>
+							<li class="filter-colors__item filter-colors__item--purple-light"></li>
+							<li class="filter-colors__item filter-colors__item--cherry"></li>
+							<li class="filter-colors__item filter-colors__item--purple"></li>
+						</ul>
+					</div>
+					<div class="catalog-filter">
+						<div class="catalog-filter__header">
+							<h3 class="catalog-filter__caption">Размер</h3>
+						</div>
+						<div class="catalog-filter__inner">
+							<h4 class="catalog-filter__subcaption">Диаметр букета</h4>
+							<ul class="catalog-filter__items--flex list-reset">
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">До 25 см</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">26-40 см</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">41-55 см</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Более 55 см</span>
+										</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="catalog-filter__inner">
+							<h4 class="catalog-filter__subcaption">Высота букета</h4>
+							<ul class="catalog-filter__items--flex list-reset">
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="hUpTo45" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">До 45 см</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">46-60 см</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="h61To75" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">61-75 см</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Более 75 см</span>
+										</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-filter">
+						<div class="catalog-filter__header catalog-filter__header--flex">
+							<h3 class="catalog-filter__caption">Состав</h3>
+							<span class="catalog-filter__toggle">
+								<svg class="catalog-filter__toggle-icon icon icon--gray stroke-2">
+									<use xlink:href="images/sprites/sprite-mono.svg#chevron-down"></use>
+								</svg>
+							</span>
+						</div>
+						<div class="catalog-filter__box">
+							<ul class="catalog-filter__items catalog-filter__items--props list-reset">
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Тюльпаны" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Тюльпаны</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Эустомы" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Эустомы</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Хризантемы" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Хризантемы</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Пионы" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Пионы</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Герберы" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Герберы</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Альстромерии" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Альстромерии</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Каллы" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Каллы</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Гортензия" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Гортензия</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Лилия" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Лилия</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Ирис" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Ирис</span>
+										</span>
+									</label>
+								</li>
+								<li class="catalog-filter__item">
+									<label class="custom-checkbox">
+										<input data-filter-name="Орхидея" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content">
+											<span class="catalog__prop-text">Орхидея</span>
+										</span>
+									</label>
+								</li>
+							</ul>
+							<button class="catalog-filter__btn btn-reset">Показать все</button>
+						</div>
+					</div>
+					<div class="catalog-filter">
+						<div class="catalog-filter__header">
+							<h3 class="catalog-filter__caption">Кому</h3>
+						</div>
+						<ul class="catalog-filter__items list-reset send-person-filter">
+							<li class="catalog-filter__item">
+								<label class="custom-checkbox">
+									<input data-filter-name="Жене" type="checkbox" class="custom-checkbox__field">
+									<span class="custom-checkbox__content">
+										<span class="catalog__prop-text">Жене</span>
+									</span>
+								</label>
+							</li>
+							<li class="catalog-filter__item">
+								<label class="custom-checkbox">
+									<input data-filter-name="Маме" type="checkbox" class="custom-checkbox__field">
+									<span class="custom-checkbox__content">
+										<span class="catalog__prop-text">Маме</span>
+									</span>
+								</label>
+							</li>
+							<li class="catalog-filter__item">
+								<label class="custom-checkbox">
+									<input data-filter-name="Коллеге" type="checkbox" class="custom-checkbox__field">
+									<span class="custom-checkbox__content">
+										<span class="catalog__prop-text">Коллеге</span>
+									</span>
+								</label>
+							</li>
+							<li class="catalog-filter__item">
+								<label class="custom-checkbox">
+									<input data-filter-name="Дочери" type="checkbox" class="custom-checkbox__field">
+									<span class="custom-checkbox__content">
+										<span class="catalog__prop-text">Дочери</span>
+									</span>
+								</label>
+							</li>
+							<li class="catalog-filter__item">
+								<label class="custom-checkbox">
+									<input data-filter-name="Подруге" type="checkbox" class="custom-checkbox__field">
+									<span class="custom-checkbox__content">
+										<span class="catalog__prop-text">Подруге</span>
+									</span>
+								</label>
+							</li>
+							<li class="catalog-filter__item">
+								<label class="custom-checkbox">
+									<input data-filter-name="Начальнику" type="checkbox" class="custom-checkbox__field">
+									<span class="custom-checkbox__content">
+										<span class="catalog__prop-text">Начальнику</span>
+									</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button class="catalog-filters__btn-reset btn-reset btn-outline" type="button">Очистить фильтры</button>
+			</div>
+			<div class="catalog-content">
+				<div class="catalog-content__header">
+					<h3 class="catalog-content__title">Букеты из роз</h3>
+					<div class="catalog-content__right">
+						<span>Сортировать:</span>
+						<div id="select-1"></div>
+					</div>
+				</div>
+				<ul class="catalog-content__tags catalog-tags list-reset">
+					<li class="catalog-tags__item">
+						Букеты из 25 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 21 розы
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 39 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 301 розы
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 35 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 31 розы
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 33 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 37 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 45 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 41 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 49 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 15 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 51 розы
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+					<li class="catalog-tags__item">
+						Букеты из 55 роз
+						<svg class="catalog-tags__icon">
+							<use xlink:href="images/sprites/sprite-mono.svg#close-alt"></use>
+						</svg>
+					</li>
+				</ul>
+				<div class="catalog-content__items products-wrapper"></div>
+				<div class="catalog-content__wait wait-products">
+					<span class="wait-products__caption">Ожидаем поступление</span>
+					<div class="wait-products__wrapper">
+					</div>
+				</div>
+				<button class="catalog-content__btn-more btn-more btn-reset">
+					<svg class="">
+						<use xlink:href="images/sprites/sprite-mono.svg#rotate"></use>
+					</svg>
+					Показать еще
+				</button>
+				<div class="catalog-content__info catalog-info">
+					<div class="catalog-info__item">
+						<h3 class="catalog-info__title">Купить недорого букет роз в Воронеже с доставкой</h3>
+						<p class="catalog-info__descr">Если возникла необходимость приобрести цветочную композицию,
+							обращайтесь в наш интернет-магазин. Покупая у нас, Вы
+							получаете следующие преимущества:</p>
+						<ul class="catalog-info__list list-reset">
+							<li class="catalog-info__list-item">
+								Большой ассортимент цветов и дополнительных приятных сюрпризов к презенту, например, мягкие
+								игрушки, гелиевые шары,
+								конфеты.
+							</li>
+							<li class="catalog-info__list-item">Доставим по городу и за его пределами на расстоянии до 50
+								км. Мы привезем заказ точно в указанное время и без опозданий.</li>
+							<li class="catalog-info__list-item">
+								Высокое качество от поставщиков из российских теплиц, с голландских аукционов, а также
+								плантаций Кении, Колумбии и
+								Эквадора.
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-info__item">
+						<h3 class="catalog-info__title catalog-info__subtitle">О чем говорит цвет</h3>
+						<p class="catalog-info__descr">Благодаря большому цветовому разнообразию, Вы подберете любой тон
+							бутонов, который, на Ваш взгляд, понравится получателю
+							презента. Однако считается, что каждая расцветка несет свое символическое значение. Поэтому
+							перед тем как определиться с
+							выбором композиции, предлагаем ознакомиться с символикой цвета:</p>
+						<ul class="catalog-info__list list-reset">
+							<li class="catalog-info__list-item">
+								Красный. Это символ любви и страсти. Обычно такой вариант принято дарить своим возлюбленным
+								или очень близким людям.
+								Уместно будет их преподнести маме или бабушке – в этом случае букет будет означать признание
+								в бесконечном уважении.
+							</li>
+							<li class="catalog-info__list-item">Розовый. Такие цветы олицетворяет нежность и тепло. Они
+								отлично подойдут для подарка девушке, например, дочери на день
+								рождения. Светло-розовый тон говорит о симпатии и восхищении, а ярко-малиновый о
+								привязанности и желании быть рядом.</li>
+							<li class="catalog-info__list-item">
+								Белоснежный. Символизирует чистоту и совершенство. Это универсальный подарок, который
+								подойдет как для второй половинки,
+								так и для коллег или просто знакомых.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

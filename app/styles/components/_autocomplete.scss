@@ -1,0 +1,31 @@
+.aa-Form {
+	padding: 0.2rem 2rem;
+
+	color: var(--primary-color);
+	line-height: 22px;
+
+	background: var(--color-white);
+	border: 1px solid #d0d2d7;
+	border-radius: 5px;
+
+	&:focus-within {
+		border-color: transparent;
+		outline: 1px solid #000;
+		box-shadow: none;
+	}
+
+	.aa-SubmitButton {
+		display: none;
+	}
+
+	.aa-Input {
+		&::placeholder {
+			color: var(--steel-gray);
+			line-height: 22px;
+		}
+	}
+}
+
+.aa-Panel {
+	z-index: 1001;
+}

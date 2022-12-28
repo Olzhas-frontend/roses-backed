@@ -1,0 +1,90 @@
+.account {
+	padding: 4rem 0 8rem;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 25rem 1fr;
+		gap: 5rem;
+	}
+
+	&__name {
+		display: inline-block;
+		margin-bottom: 1rem;
+
+		line-height: 22px;
+	}
+
+	&__discount {
+		margin-bottom: 2rem;
+		padding: 1.5rem 3.5rem 1.5rem 2rem;
+
+		background-color: #f2f6f7;
+		border: 1px solid #e2e4eb;
+		border-radius: 10px;
+
+		&-count {
+			display: inline-block;
+			margin-bottom: 0.5rem;
+
+			font-size: 1.8rem;
+			line-height: 26px;
+
+			span {
+				color: var(--color-red);
+				font-weight: 700;
+			}
+		}
+
+		&-decsr {
+			color: var(--davy-gray);
+			font-size: 1.4rem;
+			line-height: 20px;
+		}
+	}
+
+	&__control {
+		$this: &;
+
+		&-item {
+			display: inline-flex;
+			align-items: center;
+			width: 100%;
+
+			color: var(--secondary-color);
+			font-weight: 500;
+			line-height: 22px;
+
+			cursor: pointer;
+
+			&:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+
+			&.is-active {
+				color: var(--color-blue);
+
+				#{$this}-icon {
+					stroke: var(--color-blue);
+				}
+			}
+		}
+
+		&-icon {
+			width: 20px;
+			height: 20px;
+			margin-right: 1rem;
+
+			stroke: var(--secondary-color);
+		}
+
+		&-link {
+			display: inline-flex;
+			align-items: center;
+			width: 100%;
+
+			color: var(--secondary-color);
+			font-weight: 500;
+			line-height: 22px;
+		}
+	}
+}

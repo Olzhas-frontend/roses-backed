@@ -1,0 +1,143 @@
+{
+	"Mixin flex-all-sb": {
+		"scope": "scss",
+		"prefix": "flex-all-sb",
+		"body": ["@include flex-all-sb;"],
+		"description": ""
+	},
+	"Mixin flex-all-center": {
+		"prefix": "flex-all-center",
+		"body": ["@include flex-all-center;"],
+		"description": ""
+	},
+	"Mixin flex-v-center": {
+		"prefix": "flex-v-center",
+		"body": ["@include flex-v-center;"],
+		"description": ""
+	},
+	"Mixin coverbox": {
+		"prefix": "y-coverbox",
+		"body": ["@include coverbox;"],
+		"description": ""
+	},
+	"Mixin cover-bg": {
+		"prefix": "y-coverbg",
+		"body": ["@include cover-bg;"],
+		"description": ""
+	},
+	"Mixin fade": {
+		"prefix": "y-fade",
+		"body": ["@include fade($1);"],
+		"description": ""
+	},
+	"Mixin centering": {
+		"prefix": "y-centering",
+		"body": ["@include centering($1);"],
+		"description": ""
+	},
+	"Mixin not-last-child margin-right ": {
+		"prefix": "y-mr",
+		"body": ["@include mr($1);"],
+		"description": ""
+	},
+	"Mixin not-last-child margin-left ": {
+		"prefix": "y-ml",
+		"body": ["@include ml($1);"],
+		"description": ""
+	},
+	"Mixin not-last-child margin-top ": {
+		"prefix": "y-mt",
+		"body": ["@include mt($1);"],
+		"description": ""
+	},
+	"Mixin not-last-child margin-bottom ": {
+		"prefix": "y-mb",
+		"body": ["@include mb($1);"],
+		"description": ""
+	},
+	"Grid layout": {
+		"prefix": "y-ram",
+		"body": "grid-template-columns: repeat(auto-fit, minmax($1, 1fr));",
+		"description": ""
+	},
+	"Pseudoelement before": {
+		"prefix": "y-bf",
+		"body": ["&::before {", "\tcontent: \"\";", "\t", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoelement after": {
+		"prefix": "y-af",
+		"body": ["&::after {", "\tcontent: \"\";", "\t", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoclass hover": {
+		"prefix": "y-hv",
+		"body": ["&:hover {", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoclass focus": {
+		"prefix": "y-fc",
+		"body": ["&:focus {", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoclass even": {
+		"prefix": "y-even",
+		"body": ["&:nth-child(2n) {", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoclass odd": {
+		"prefix": "y-odd",
+		"body": ["&:nth-child(odd) {", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoclass first": {
+		"prefix": "y-first",
+		"body": ["&:first-child {", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoclass last": {
+		"prefix": "y-last",
+		"body": ["&:last-child {", "\t$1", "}"],
+		"description": ""
+	},
+	"Pseudoclass not-last-child": {
+		"prefix": "y-lst",
+		"body": ["&:not(:last-child) {", "\t$1", "}"],
+		"description": ""
+	},
+	"Breakpoint sm": {
+		"prefix": "resp-sm",
+		"body": ["@include md_tb {", "\t$1", "}"],
+		"description": ""
+	},
+	"Breakpoint md": {
+		"prefix": "resp-md",
+		"body": ["@include md_md {", "\t$1", "}"],
+		"description": ""
+	},
+	"Breakpoint lg": {
+		"prefix": "resp-lg",
+		"body": ["@include md_lg {", "\t$1", "}"],
+		"description": ""
+	},
+	"Breakpoint tb": {
+		"prefix": "resp-tb",
+		"body": ["@include md_tb {", "\t$1", "}"],
+		"description": ""
+	},
+	"Breakpoint xl": {
+		"prefix": "resp-xl",
+		"body": ["@include md_xl {", "\t$1", "}"],
+		"description": ""
+	},
+	"Breakpoint xxl": {
+		"prefix": "resp-xxl",
+		"body": ["@include md_xxl {", "\t$1", "}"],
+		"description": ""
+	},
+	"Breakpoint xs": {
+		"prefix": "resp-xs",
+		"body": ["@include md_xs {", "\t$1", "}"],
+		"description": ""
+	}
+}

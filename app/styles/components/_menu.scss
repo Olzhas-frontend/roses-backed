@@ -1,0 +1,38 @@
+.menu {
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__item {
+		&--dropdown {
+			position: relative;
+
+			@include hover {
+				.sub-menu {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+
+		font-weight: 500;
+		line-height: 22px;
+
+		&--bolder {
+			font-weight: 600;
+		}
+	}
+
+	&__icon {
+		width: 15px;
+		height: 15px;
+		margin-left: 0.5rem;
+	}
+}

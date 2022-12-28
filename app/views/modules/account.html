@@ -1,0 +1,75 @@
+<section class="account">
+	<div class="container">
+		<div class="account__wrapper">
+			<div class="account__nav">
+				<span class="account__name">Здравствуйте, </span>
+				<div class="account__discount">
+					<p class="account__discount-count">Ваша скидка <span></span></p>
+					<p class="account__discount-decsr">Цены на сайте отображаются с учётом вашей скидки</p>
+				</div>
+				<ul class="account__control tabs-control list-reset">
+					<li class="account__control-item tabs-control__item is-active" data-path-tab="account-main">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#user"></use>
+						</svg>
+						Личный кабинет
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-address">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#map-pin-2"></use>
+						</svg>
+						Адресы
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-orders">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#orders"></use>
+						</svg>
+						Заказы
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-settings">
+						<svg class="account__control-icon icon icon--gray stroke-2">
+							<use xlink:href="images/sprites/sprite-mono.svg#setting"></use>
+						</svg>
+						Настройки
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-mentions">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#mention"></use>
+						</svg>
+						Напоминания
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-discounts">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#discount"></use>
+						</svg>
+						О скидках
+					</li>
+					<button class="account__control-link log-out btn-reset" href="#">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#logout"></use>
+						</svg>
+						Выйти
+					</button>
+				</ul>
+			</div>
+			<div class="account__content">
+				<div class="account__content-tabs tabs-content">
+					<div class="tabs-content__item tabs-content__item--active" data-target-tab="account-main">
+						<h3 class="tabs-content__title">Личный кабинет</h3>
+						<table class="tabs-content__table account-table">
+							<tr class="account-table__header">
+								<th class="account-table__title">Номер заказа</th>
+								<th class="account-table__title">Название</th>
+								<th class="account-table__title">Дата доставки</th>
+								<th class="account-table__title">Получатель</th>
+								<th class="account-table__title">Статус</th>
+								<th class="account-table__title">Сумма</th>
+								<th class="account-table__title"></th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,98 @@
+.account-table {
+	&__header {
+		background: #f4f5f7;
+		border-bottom: 1px solid #d0d2d7;
+	}
+
+	&__title {
+		padding: 1.5rem 0;
+
+		color: var(--davy-gray);
+		font-weight: 400;
+		font-size: 1.4rem;
+		line-height: 20px;
+		text-align: left;
+
+		&:first-child {
+			padding-left: 2rem;
+
+			border-top-left-radius: 10px;
+		}
+
+		&:last-child {
+			border-top-right-radius: 10px;
+		}
+	}
+
+	&__item {
+		height: 60px;
+
+		background-color: var(--color-white);
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #e2e4eb;
+		}
+	}
+
+	&__cell {
+		color: var(--secondary-color);
+		font-size: 1.4rem;
+		line-height: 20px;
+
+		&:first-child {
+			padding-left: 2rem;
+		}
+
+		&:last-child {
+			width: 100px;
+			padding-left: 2rem;
+		}
+
+		&.order-price {
+			font-weight: 500;
+		}
+
+		&.order-number {
+			color: var(--color-blue);
+			font-weight: 500;
+			font-size: 1.6rem;
+			line-height: 22px;
+
+			cursor: pointer;
+		}
+
+		&.status {
+			font-weight: 500;
+
+			&--wait {
+				color: #ffa500;
+			}
+
+			&--success {
+				color: #0093a2;
+			}
+
+			&--canceled {
+				color: #e2195b;
+			}
+		}
+	}
+
+	&__btn {
+		color: var(--color-blue);
+		text-align: left;
+	}
+
+	&__actions-btn {
+		&:first-child {
+			margin-right: 2.3rem;
+		}
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+
+		stroke-width: 1.2;
+	}
+}

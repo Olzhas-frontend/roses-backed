@@ -1,0 +1,28 @@
+.container {
+	width: 100%;
+	max-width: var(--container-width);
+	margin: 0 auto;
+	padding: 0 var(--container-offset);
+
+	&-fluid {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 var(--container-offset);
+	}
+
+	@include md_sm {
+		max-width: 540px;
+	}
+
+	@include md_md {
+		max-width: 720px;
+	}
+
+	@include md_lg {
+		max-width: 960px;
+	}
+
+	@include md_xl {
+		max-width: 1200px;
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"extends": ["stylelint-config-standard", "stylelint-config-rational-order"],
+	"plugins": ["stylelint-scss"],
+	"ignoreFiles": ["app/styles/vendor/**/*.scss", "build/css/*.css"],
+	"rules": {
+		"at-rule-no-unknown": null,
+		"scss/at-rule-no-unknown": true,
+		"scss/selector-no-redundant-nesting-selector": true,
+		"indentation": "tab",
+		"no-empty-source": null,
+		"no-missing-end-of-source-newline": null,
+		"declaration-empty-line-before": null,
+		"block-closing-brace-newline-after": [
+			"always",
+			{
+				"ignoreAtRules": ["if", "else"]
+			}
+		],
+		"at-rule-empty-line-before": [
+			"always",
+			{
+				"except": ["blockless-after-same-name-blockless", "first-nested"],
+				"ignore": ["after-comment"],
+				"ignoreAtRules": ["if", "else"]
+			}
+		],
+		"block-closing-brace-empty-line-before": "never",
+		"order/properties-order": [],
+		"plugin/rational-order": [
+			true,
+			{
+				"empty-line-between-groups": true
+			}
+		],
+		"no-descending-specificity": null,
+		"string-quotes": "single",
+		"property-no-vendor-prefix": null,
+		"selector-class-pattern": null
+	}
+}

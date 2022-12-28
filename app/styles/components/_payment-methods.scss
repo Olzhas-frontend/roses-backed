@@ -1,0 +1,27 @@
+.payment-methods {
+	&__title {
+		margin: 0;
+		margin-bottom: 0.5rem;
+
+		font-weight: 500;
+		line-height: 22px;
+	}
+
+	&__descr {
+		color: var(--davy-gray);
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+
+		&-item {
+			&:not(:last-child) {
+				margin-right: 0.5rem;
+			}
+		}
+	}
+}

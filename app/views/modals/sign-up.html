@@ -1,0 +1,73 @@
+<div class="graph-modal__container auth" role="dialog" aria-modal="true" data-graph-target="sign-in">
+	<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+	<div class="graph-modal__content">
+		<div class="auth__wrapper">
+			<ul class="auth__controls tabs-control list-reset">
+				<li class="auth__controls-item tabs-control__item " data-path-tab="sign-up">
+					Регистрация
+				</li>
+				<li class="auth__controls-item tabs-control__item is-active" data-path-tab="sign-in">
+					Вход
+				</li>
+			</ul>
+			<div class="auth__tabs tabs-content">
+				<div class="auth__tabs-item tabs-content__item tabs-content__item--active auth__tabs--sign-in"
+					data-target-tab="sign-in">
+					<h4 class="auth__title">Войти</h4>
+					<form class="form" id="sing-in-form" action="#">
+						<div class="form__group">
+							<label class="form__label" for="sigin-in-phone">Номер телефона</label>
+							<input placeholder="+7" class="form__control" id="sigin-in-phone" name="sigin-in-phone" type="tel">
+							<p class="form__descr">Напишите свой мобильный телефон в международном формате (+7...). Вам
+								придет
+								смс с кодом для входа</p>
+						</div>
+						<div class="form__group">
+							<button class="btn-reset form__btn" id="recieve-code-btn">Получить код</button>
+						</div>
+					</form>
+				</div>
+				<div class="auth__tabs-item tabs-content__item auth__tabs--sign-up" data-target-tab="sign-up">
+					<h4 class="auth__title">Регистрация</h4>
+					<form class="form" id="sing-up-form" action="#">
+						<div class="form__group">
+							<label class="form__label" for="sing-up-name">ФИО</label>
+							<input class="form__control" id="sing-up-name" name="sing-up-name" type="text">
+						</div>
+						<div class="form__group">
+							<label class="form__label" for="sigin-up-phone">Номер телефона</label>
+							<input placeholder="+7" class="form__control" id="sigin-up-phone" name="sigin-up-phone" type="tel">
+						</div>
+						<div class="form__group">
+							<button class="btn-reset form__btn">Зарегистрироваться</button>
+						</div>
+						<p class="form__descr centered">Нажимая кнопку "Зарегистрироваться" вы соглашаетесь с условиями <a
+								href="#" class="form__link">обработки персональных данных</a> и <a class="form__link"
+								href="#">публичной
+								офертой</a>.</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="graph-modal__container auth" role="dialog" aria-modal="true" data-graph-target="confirm-phone">
+	<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+	<div class="graph-modal__content">
+		<form class="form" action="#" id="confirm-phone">
+			<h4 class="auth__title text-left">Подтвердите ваш номер</h4>
+			<p class="auth__code">Код выслан на номер: <span></span></p>
+			<div class="auth__inputs">
+				<input class="auth__field" maxlength="1" type="text">
+				<input class="auth__field" maxlength="1" type="text">
+				<input class="auth__field" maxlength="1" type="text">
+				<input class="auth__field" maxlength="1" type="text">
+				<input class="auth__field" maxlength="1" type="text">
+				<input class="auth__field" maxlength="1" type="text">
+			</div>
+			<button class="auth__change-btn btn-reset">Изменить номер телефона</button>
+			<button class="btn-reset form__btn">Подтвердить телефон</button>
+			<button class="auth__send-code btn-reset">Отправить код повторно через 59 сек.</button>
+		</form>
+	</div>
+</div>

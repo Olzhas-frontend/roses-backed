@@ -1,0 +1,95 @@
+.tabs-content {
+	&__item {
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 2rem;
+
+		color: var(--secondary-color);
+		font-weight: 600;
+		font-size: 3rem;
+		line-height: 40px;
+	}
+
+	&__table {
+		width: 100%;
+
+		border-collapse: collapse;
+
+		box-shadow: 0 4px 15px rgba(34, 42, 70, 0.08);
+
+		&.mention-table {
+			.account-table__cell {
+				&:last-child {
+					width: auto;
+
+					padding-right: 3.5rem;
+
+					text-align: right;
+				}
+			}
+
+			.account-table__title {
+				&:last-child {
+					padding-right: 3.5rem;
+
+					text-align: right;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		display: inline-flex;
+		align-items: center;
+		margin-top: 3rem;
+		padding: 1.4rem 3rem 1.4rem 2.5rem;
+
+		color: var(--color-white);
+		font-weight: 500;
+		line-height: 22px;
+
+		background: #0093a2;
+		border: 1px solid transparent;
+		border-radius: 5px;
+
+		transition: 0.3s ease-in-out;
+
+		@include hover {
+			color: var(--color-blue);
+
+			background-color: var(--color-white);
+			border-color: var(--color-blue);
+
+			svg {
+				fill: var(--color-blue);
+			}
+		}
+
+		svg {
+			width: 16px;
+			height: 16px;
+			margin-right: 1.4rem;
+
+			transition: fill 0.3s ease-in-out;
+
+			fill: var(--color-white);
+		}
+	}
+
+	&__settings {
+		padding: 4rem;
+
+		background: var(--color-white);
+		border: 1px solid hsl(220, 16%, 96%);
+		border-radius: 10px;
+
+		box-shadow: 0 4px 15px rgba(34, 42, 70, 0.08);
+	}
+}

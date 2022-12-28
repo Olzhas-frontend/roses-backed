@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<title>Главная</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic" />
+	<link rel="stylesheet" href="https://unpkg.com/instantsearch.css@7/themes/satellite-min.css" />
+	<link rel="stylesheet" href="css/main.min.css">
+	<style>
+
+	</style>
+</head>
+
+<body class="page__body">
+	<div class="site-container">
+		//= partials/header.html
+
+		<main class="main">
+			//= modules/intro.html
+			//= modules/reviews.html
+
+		</main>
+
+		//= partials/footer.html
+		//= modals/main-modal.html
+		<div id="recaptcha-container"></div>
+	</div>
+	<script src="scripts/index.bundle.js"></script>
+</body>
+
+</html>

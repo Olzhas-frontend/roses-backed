@@ -1,0 +1,28 @@
+:root {
+	//fonts
+	--fz-base: 1.6rem;
+	--lh-base: 24px;
+	--fw-base: 400;
+	--fs-base: normal;
+	--ff-primary: 'TTNorms', sans-serif;
+	--ff-secondary: 'GTEestiProDisplay', sans-serif;
+
+	//colors
+	--primary-color: #1b1c21;
+	--secondary-color: #222a46;
+	--color-white: #fff;
+	--davy-gray: #505567;
+	--bright-grey: #353949;
+	--color-red: #e2195b;
+	--color-blue: #0093a2;
+	--steel-gray: #7d818e;
+	--white-smoke: #f2f6f7;
+	//layout
+	--content-width: 1200px;
+	--container-offset: 1.5rem;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+	--grid-gap: 30px;
+
+	//styles
+	--main-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
